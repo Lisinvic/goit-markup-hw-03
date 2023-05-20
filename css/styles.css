@@ -120,6 +120,8 @@ img {
 .header-item-navigation {
   color: var(--dark);
   display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-item-navigation:hover,
@@ -179,6 +181,8 @@ img {
 /* -------Hero section------- */
 .hero {
   background: var(--dark);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-container {
@@ -186,8 +190,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -201,7 +203,7 @@ img {
 }
 
 .hero-button {
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -214,6 +216,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   display: block;
+  border: none;
 }
 
 .hero-button:hover,
@@ -222,6 +225,11 @@ img {
 }
 
 /* -------Features section------- */
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -237,15 +245,13 @@ img {
 }
 
 .features-list {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
-  justify-content: center;
   gap: 24px;
 }
 
 .features-item {
   max-width: 264px;
+  width: calc((100 - 72px) / 4);
 }
 
 .features-title {
@@ -259,11 +265,17 @@ img {
 
 /* -------Works section------- */
 
+.works {
+  padding-bottom: 120px;
+}
+
 .works-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
+}
+
+.works-item {
+  width: calc((100% - 24px) / 3);
 }
 
 .works-title {
@@ -274,17 +286,18 @@ img {
 /* -------Team section------- */
 
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background: var(--light);
 }
 
 .team-list {
   display: flex;
-  padding-bottom: 120px;
+  gap: 24px;
 }
 
 .team-title {
   color: var(--dark);
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
@@ -297,8 +310,8 @@ img {
 }
 
 .team-item {
-  /* background-color: var(--white-background); */
-  width: calc((100% - 28px) / 3);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -321,8 +334,12 @@ img {
 
 /* -------Filters------- */
 
-.filters-list {
+.partfolio {
   padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filters-list {
   margin-bottom: 72px;
   display: flex;
   justify-content: center;
@@ -352,6 +369,7 @@ img {
 .filters-button:focus {
   background: var(--pressed-state);
   color: var(--white-background);
+  border: 1px solid transparent;
 }
 
 /* -------Partfolio Projects------- */
@@ -360,19 +378,17 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  padding-bottom: 120px;
 }
 
 .partfolio-item-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
+  border: 1px solid var(--accent);
+  border-top: transparent;
 }
 
 .partfolio-item {
   max-width: 360px;
   background: var(--white-background);
-  border: 1px solid var(--accent);
   width: calc((100% - 48px) / 3);
 }
 
@@ -388,6 +404,7 @@ img {
 /* ---------------------Footer--------------------- */
 
 .footer {
+  padding-top: 100px;
   background: var(--dark);
 }
 
@@ -399,8 +416,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brend);
-  display: flex;
-  padding-top: 100px;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
